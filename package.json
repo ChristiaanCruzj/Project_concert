@@ -1,0 +1,23 @@
+{
+  "name": "3.0_festivalmusica_inicio",
+  "version": "1.0.0",
+  "description": "Proyecto con Gulp,Sass y html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ChristiaanCruzj/Concert.git"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "Christian Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChristiaanCruzj/Concert/issues"
+  },
+  "homepage": "https://github.com/ChristiaanCruzj/Concert#readme"
+}
