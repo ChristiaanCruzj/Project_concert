@@ -1,8 +1,10 @@
 const { src, dest, watch } = require("gulp"); // i need this functions 
 const sass = require('gulp-sass')(require('sass')); //const sass = requiere("sass") this work only with sass // export 
+const plumber = require('gulp-plumber');
 
 function css(done) {
     src("src/scss/**/*.scss") //src("src/scss/app.scss") //identify this file SASS
+    .pipe(plumber())
     .pipe(sass()) //compile it
     .pipe(dest("build/css")) //store it on disk
 
