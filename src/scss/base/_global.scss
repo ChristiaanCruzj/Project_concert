@@ -11,7 +11,12 @@ html {
 }
 body {
     font-family: v.$main_font;
+    font-size: 1.6rem;
+}
+p {
+    width: 95%;
     color: v.$black;
+    line-height: 1.5;
 }
 .content {
     width: 95%;
@@ -32,4 +37,9 @@ h2 {
 }
 h3 {
     font-size: 3rem;
+}
+// Images 
+img {
+    max-width: 100%;
+    display: block;
 }

@@ -320,7 +320,13 @@ html {
 
 body {
   font-family: "Monserrat", sans-serif;
+  font-size: 1.6rem;
+}
+
+p {
+  width: 95%;
   color: #000;
+  line-height: 1.5;
 }
 
 .content {
@@ -347,6 +353,11 @@ h2 {
 
 h3 {
   font-size: 3rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .header {
@@ -434,4 +445,24 @@ h3 {
   padding: 1rem 2rem;
   font-weight: 700;
   font-size: 2.4rem;
+}
+
+.about-festival {
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+}
+
+.content-festival {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-festival h2 {
+  margin-bottom: 2rem;
+}
+.content-festival .date {
+  color: #F53756;
+  font-weight: 700;
 }
