@@ -10,7 +10,7 @@
         @content;
     }
 }
-@mixin deskttop {
+@mixin desktop {
     @media (min-width: v.$desktop) {
         @content;
     }

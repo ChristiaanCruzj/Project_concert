@@ -12,6 +12,10 @@ html {
 body {
     font-family: v.$main_font;
     font-size: 1.6rem;
+    //only in gallery
+    &.fix-body {
+        overflow: hidden;
+    }
 }
 p {
     
