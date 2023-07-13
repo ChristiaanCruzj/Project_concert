@@ -3,6 +3,14 @@ const { src, dest, watch, parallel } = require("gulp"); // i need this functions
 const sass = require('gulp-sass')(require('sass')); //const sass = requiere("sass") this work only with sass // export 
 const plumber = require('gulp-plumber');
 
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+const postcss = require('gulp-postcss');
+const sourcemaps = require('gulp-sourcemaps');
+
+// javascript
+const terser = require('gulp-terser-js');
+
 //images
 const cache = require('gulp-cache');
 const imagemin = require( 'gulp-imagemin' );
@@ -11,8 +19,11 @@ const avif = require('gulp-avif');
 
 function css(done) {
     src("src/scss/**/*.scss") //src("src/scss/app.scss") //identify this file SASS
+    .pipe(sourcemaps.init())
     .pipe(plumber())
     .pipe(sass()) //compile it
+    .pipe( postcss([autoprefixer(),cssnano]))
+    .pipe(sourcemaps.write('.')) //the same location
     .pipe(dest("build/css")) //store it on disk
 
     done(); //callback that notifies gulp when we reach the end
@@ -49,6 +60,7 @@ function versionAvif ( done ) {
 
 function javascript( done ) {
     src('src/js/**/*.js')
+        .pipe(terser())
         .pipe(dest('build/js'));
     done();
 }
