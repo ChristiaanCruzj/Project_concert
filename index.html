@@ -17,9 +17,9 @@
         <div class="content content-header">
             <h1>Rock & EDM Festival</h1>
             <nav class="main-nav">
-                <a href="#">Line Up</a>
-                <a href="#">Gallery</a>
-                <a href="#">Tickets</a>
+                <a href="#lineup">Line Up</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#ticket">Tickets</a>
             </nav>
         </div>
     </header>
@@ -55,7 +55,7 @@
     </section >    <!-- .about-festival -->
 
     
-    <section class="lineup">
+    <section id="lineup" class="lineup">
         <h3>Line Up</h3>
         <p class="day">Viernes 21</p>
         <div class="stages-content content">
@@ -110,38 +110,38 @@
         </div><!--.stages-content-->
     </section> <!-- .lineup-->
 
-    <section class="gallery content">
+    <section id="gallery" class="gallery content">
         <h3>Galery</h3>
         <ul class="image-gallery">
 
         </ul>
     </section><!--.gallery-->
 
-    <section class="tickets bg-green">
+    <section id="ticket" class="tickets bg-green">
         <h3>Tickets</h3>
-        <div class="content tickets-content">
-            <div class="basic pase">
-                <p>1 day Ticket</p>
-                <header class="header-ticket">
+        <div class="content ticket-content">
+            <div class="basic ticket">
+                <p class="ticket-name">1 day Ticket</p>
+                <header class="ticket-header">
                     <p>Includes</p>
                 </header>
-                <div class="body-ticket">
+                <div class="ticket-body">
                     <ul>
                         <li>access to both scenarios</li>
                         <li>food and drink</li>
                     </ul>
                 </div>
-                <footer class="footer-ticket">
+                <footer class="ticket-footer">
                     <p>$100</p>
                 </footer>
 
             </div>
-            <div class="premium pase">
-                <p>2 days Ticket</p>
-                <header class="header-ticket">
+            <div class="premium ticket">
+                <p class="ticket-name">2 days Ticket</p>
+                <header class="ticket-header">
                     <p>Includes</p>
                 </header>
-                <div class="body-ticket">
+                <div class="ticket-body">
                     <ul>
                         <li>access to both scenarios</li>
                         <li>food and drink</li>
@@ -149,12 +149,16 @@
                         <li>vip access</li>
                     </ul>
                 </div>
-                <footer class="footer-ticket">
+                <footer class="ticket-footer">
                     <p>$180</p>
                 </footer>
             </div>
         </div>
     </section> <!--.tickets-->
+
+    <footer class="site-footer">
+        <p>Rock & EDM Festival. Todos los derechos Reservados</p>
+    </footer>
    
     <script src="build/js/app.js"></script>
 
