@@ -2,7 +2,7 @@
 @use '../base/variables' as v;
 
 .lineup {
-    background-color: v.$pink;
+    background-color: v.$gray;
     padding: 5rem 0;
     h3, p {
         text-align: center;
@@ -22,6 +22,8 @@
     }
     p {
         color: v.$black;
+        font-size: 2.5rem;
+        font-weight: 700;
     }
     .stage {
         padding-top: 2rem;
@@ -47,6 +49,8 @@
     background-image: url(../img/icono_rock.png);
 }
 .schedule {
+    color: v.$black;
+    font-size: 1.8rem;
     @include m.resetear-lista;
     li {
         padding: 2.5rem;
@@ -57,14 +61,14 @@
     }
 }
 .bg-yellow {
-    background-color: v.$yellow;
+    background-color: v.$stagerock;
     li:nth-child(odd) {
-        background-color: darken(v.$yellow, 15%);
+        background-color: darken(v.$stagerock, 15%);
     }
 }
 .bg-green {
-    background-color: v.$green;
+    background-color: v.$stageEDM;
     li:nth-child(odd) {
-        background-color: darken(v.$green, 10%);
+        background-color: darken(v.$stageEDM, 10%);
     }
 }

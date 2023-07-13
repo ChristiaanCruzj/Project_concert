@@ -3,6 +3,7 @@
 
 .tickets {
     padding: 5rem 0;
+    background-color: v.$gray;
     h3 {
         text-align: center;
         color: v.$white;
@@ -34,7 +35,7 @@
     }
 
     &-header{
-        background-color: v.$pink;
+        background-color: v.$black;
         p {
             text-transform: uppercase;
             font-size: 1.6rem;
@@ -53,7 +54,7 @@
         }
     }
     &-footer {
-        background-color: v.$purple;
+        background-color: v.$ticketventa;
         p {
             font-size: 2.4rem;
             font-weight: 700;
