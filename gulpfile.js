@@ -60,7 +60,9 @@ function versionAvif ( done ) {
 
 function javascript( done ) {
     src('src/js/**/*.js')
-        .pipe(terser())
+        .pipe(sourcemaps.init())
+        .pipe( terser() )
+        .pipe(sourcemaps.write('.'))
         .pipe(dest('build/js'));
     done();
 }
